@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// variables
+$blue: hsl(223, 87%, 63%);
+$Gray: hsl(0, 0%, 59%);
+$black: #000;
+$red: hsl(354, 100%, 66%);
+$lighBlue: hsl(223, 100%, 88%);
+
+$lanuchingSoon : 50px;
+// end variables
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    zoom: 80%;
+}
+
+.main{
+    text-align: center;
+    align-items: center;
+}
+
+.main .icon svg{
+    transform: translateY(30px);
+    color: $black;
+}
+
+.heading h1{
+    word-spacing: 2px;
+    transform: translateY(73.33px);
+    color: $Gray;
+    font-weight: 300;
+    font-size: $lanuchingSoon;
+}
+
+.heading h1 span{
+    word-spacing: 2px;
+    color: $black;
+    font-weight: 800;
+    font-size: $lanuchingSoon;
+}
+
+
+.heading h2{
+    transform: translateY(93.33px);
+    font-weight: 300;
+    color: $black;
+}
+
+.form{
+    transform: translateY(124.444px);
+}
+
+.form .btn{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: $blue;
+    padding:  17px 50px;
+    border-radius: 100px;
+    margin-left: 20px;
+    box-shadow: -5px 5px 5px $lighBlue;
+    transition: .5s ease;
+}
+
+.form .btn button{
+    border: none;
+    outline: none;
+}
+
+.form .btn:hover{
+    opacity: 0.8;
+}
+
+
+.form .error{
+    color: $red;
+    font-style: italic;
+    margin-right: 370px;
+    font-size: 17px;
+}
+
+.form input{
+    outline: none;
+    padding: 10px 20px;
+	border: 1px solid $Gray;
+    width: 450px;
+    height: 50px;
+    border-radius: 100px;
+    transition: .5s ease;
+}
+
+.form input:focus{
+	border: 1px solid $Gray;
+}
+
+.form.error input{
+	border: 1px solid $red;
+}
+
+.form.done input{
+    border: 1px solid $blue;
+}
+
+img{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 800px;
+}
+
+.social-media{
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.social-media .fab{
+    cursor: pointer;
+    color: $blue;
+    margin-right: 5px;
+	border: .00001px solid rgba($color: $Gray, $alpha: .2);
+    padding: 10px;
+    border-radius: 50%;   
+    background-color: white;
+    transition: .5s ease;
+}
+
+.social-media .facebook .fab{
+    padding: 10px 14px 10px 14px;
+}
+
+
+.social-media .fab:hover{
+    background-color: $blue;
+    color: white;
+}
+
+.copyright span{
+    color: $Gray;
+    font-size: 15px;
+}
+
+// Responsive
+
+@media(max-width: 375px){
+    .main .icon svg{
+        transform: translateY(100px);
+    }
+
+    img{
+        width: 400px;
+    }
+
+    .heading h1{
+        font-size: 30px;
+        transform: translateY(143.33px);
+    }
+
+    .heading h2{
+        transform: translateY(143.33px);
+    }
+
+    .form{
+        transform: translateY(204.444px);
+    }
+
+    .form input{
+        padding: 10px 10px;
+    }
+
+    .form .btn{
+        margin-top: 100px;
+        top: 100px;
+        line-height: 100px;
+        padding:  17px 156px;
+    }
+
+    .form .error{
+        margin-top: 1000px;
+        margin-right: 100px;
+    }
+}
+
+@media(max-width: 405px){
+    img{
+        width: 400px;
+    }   
+}

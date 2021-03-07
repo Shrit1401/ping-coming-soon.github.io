@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  zoom: 80%;
+}
+
+.main {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .icon svg {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  color: #000;
+}
+
+.heading h1 {
+  word-spacing: 2px;
+  -webkit-transform: translateY(73.33px);
+          transform: translateY(73.33px);
+  color: #969696;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.heading h1 span {
+  word-spacing: 2px;
+  color: #000;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.heading h2 {
+  -webkit-transform: translateY(93.33px);
+          transform: translateY(93.33px);
+  font-weight: 300;
+  color: #000;
+}
+
+.form {
+  -webkit-transform: translateY(124.444px);
+          transform: translateY(124.444px);
+}
+
+.form .btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #4f7df3;
+  padding: 17px 50px;
+  border-radius: 100px;
+  margin-left: 20px;
+  -webkit-box-shadow: -5px 5px 5px #c2d3ff;
+          box-shadow: -5px 5px 5px #c2d3ff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.form .btn button {
+  border: none;
+  outline: none;
+}
+
+.form .btn:hover {
+  opacity: 0.8;
+}
+
+.form .error {
+  color: #ff5263;
+  font-style: italic;
+  margin-right: 370px;
+  font-size: 17px;
+}
+
+.form input {
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid #969696;
+  width: 450px;
+  height: 50px;
+  border-radius: 100px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.form input:focus {
+  border: 1px solid #969696;
+}
+
+.form.error input {
+  border: 1px solid #ff5263;
+}
+
+.form.done input {
+  border: 1px solid #4f7df3;
+}
+
+img {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 800px;
+}
+
+.social-media {
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+.social-media .fab {
+  cursor: pointer;
+  color: #4f7df3;
+  margin-right: 5px;
+  border: 0.00001px solid rgba(150, 150, 150, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.social-media .facebook .fab {
+  padding: 10px 14px 10px 14px;
+}
+
+.social-media .fab:hover {
+  background-color: #4f7df3;
+  color: white;
+}
+
+.copyright span {
+  color: #969696;
+  font-size: 15px;
+}
+
+@media (max-width: 375px) {
+  .main .icon svg {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  img {
+    width: 400px;
+  }
+  .heading h1 {
+    font-size: 30px;
+    -webkit-transform: translateY(143.33px);
+            transform: translateY(143.33px);
+  }
+  .heading h2 {
+    -webkit-transform: translateY(143.33px);
+            transform: translateY(143.33px);
+  }
+  .form {
+    -webkit-transform: translateY(204.444px);
+            transform: translateY(204.444px);
+  }
+  .form input {
+    padding: 10px 10px;
+  }
+  .form .btn {
+    margin-top: 100px;
+    top: 100px;
+    line-height: 100px;
+    padding: 17px 156px;
+  }
+  .form .error {
+    margin-top: 1000px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 405px) {
+  img {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
